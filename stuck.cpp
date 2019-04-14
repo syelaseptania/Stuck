@@ -4,6 +4,16 @@ struct node{
 	int data;
 	node *next;
 };
+
+class myStack{
+	private:
+	Element tambah;
+	Element *depan = NULL;
+
+	public:
+	void tambah(){
+		tambah.top = -1;
+	}
 node *depan = NULL;
 
 bool isempty(){
