@@ -4,16 +4,6 @@ struct node{
 	int data;
 	node *next;
 };
-
-class myStack{
-	private:
-	Element tambah;
-	Element *depan = NULL;
-
-	public:
-	void tambah(){
-		tambah.top = -1;
-	}
 node *depan = NULL;
 
 bool isempty(){
@@ -38,13 +28,13 @@ void tambah (float isi){
 	}}
 
 void kurang (){
-	node *copot = new node;
+	node *hilangkan = new node;
 	if(isempty()){
 		cout << "Tidak ada stack";
 	}else{
-		copot = depan;
+		hilangkan = depan;
 		depan = depan->next;
-		delete copot;
+		delete hilangkan;
 	}
 }
 
@@ -63,14 +53,14 @@ void cetak (){
 }
 int main (){
     int pil,n;
-    cout<<"=================================="<<endl;
+        cout<<"=================================="<<endl;
 	cout<<"      Nama : Syela Septania       "<<endl;
 	cout<<"      Npm  : 1817051058           "<<endl;
 	cout<<"=================================="<<endl;
     do {
 
-  cout<<"----------------------------------"<<endl;
-  cout<<"        ---PILIH MENU---          "<<endl;
+        cout<<"----------------------------------"<<endl;
+        cout<<"        ---PILIH MENU---          "<<endl;
 	cout<<endl<<endl;
 	cout<<"----------------------------------"<<endl;
 	cout<<"\n    1. Tambah                   "<<endl;
